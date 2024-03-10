@@ -13,8 +13,8 @@ html {
 }
 
 /* Body */
-.body {
-  font-size: clamp(100%, 1rem + 2vw m 25px);
+.Body {
+  font-size: clamp(100%, 1rem + 2vw, 25px);
 }
 
 /* Header */
