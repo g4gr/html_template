@@ -1,107 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-AR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="" />
-        <meta name="author" content="authors.txt" />
-        <meta name="copyright" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- OG Tags -->
-        <meta property="og:locale" content="es_AR" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:title" content="" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:image:type" content="" />
-        <meta property="og:image:height" content="" />
-        <meta property="og:image:width" content="" />
-        <meta property="og:image:alt" content="" />
-        <!-- OG : Twitter -->
-        <meta property="twitter:card" content="" />
-        <meta property="twitter:url" content="" />
-        <meta property="twitter:title" content="" />
-        <meta property="twitter:image" content="" />
-        <meta property="twitter:image:type" content="" />
-        <meta property="twitter:image:height" content="" />
-        <meta property="twitter:image:width" content="" />
-        <meta property="twitter:image:alt" content="Logo " />
-        <!-- Favicon default -->
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-        <!-- Minimal -->
-        <link rel="icon" type="image/png" href="./images/favicon@32.png" />
-        <link rel="icon" sizes="192x192" href="./images/icon@192.png" />
-        <link rel="apple-touch-icon" href="./images/icon@152.png" />
-        <meta name="msapplication-square310x310logo" content="./images/icon@310.png" />
-        <!-- Apple -->
-        <link rel="apple-touch-icon" href="./images/touch-icon-iphone.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="./images/touch-icon-ipad.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="./images/touch-icon-iphone-retina.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="./images/touch-icon-ipad-retina.png" />
-        <!-- Microsoft -->
-        <meta name="msapplication-square70x70logo" content="./images/icon_smalltile.png" />
-        <meta name="msapplication-square150x150logo" content="./images/icon_mediumtile.png" />
-        <meta name="msapplication-wide310x150logo" content="./images/icon_widetile.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="authors.txt" />
+    <meta name="copyright" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" type="text/css" media="all" href="./styles/styles.css" />
-        <!--<link rel="stylesheet" type="text/css" media="speech" href="./styles/speech.css" />-->
-        <!--<link rel="stylesheet" type="text/css" media="print" href="./styles/print.css" />-->
-        <!--<link rel="stylesheet" type="text/css" media="screen and ( prefers-color-scheme : dark )" href="./styles/styles--dark.css" />-->
-        <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--sm.css" />-->
-        <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--ms.css>-->
-        <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--lg.css" />-->
-        <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--xl.css" />-->
+    <!-- OG Tags -->
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="" />
+    <meta property="og:image:height" content="" />
+    <meta property="og:image:width" content="" />
+    <meta property="og:image:alt" content="" />
+    <!-- OG : Twitter -->
+    <meta property="twitter:card" content="" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:image:type" content="" />
+    <meta property="twitter:image:height" content="" />
+    <meta property="twitter:image:width" content="" />
+    <meta property="twitter:image:alt" content="Logo " />
+    <!-- Favicon default -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <!-- Minimal -->
+    <link rel="icon" type="image/png" href="./images/favicon@32.png" />
+    <link rel="icon" sizes="192x192" href="./images/icon@192.png" />
+    <link rel="apple-touch-icon" href="./images/icon@152.png" />
+    <meta
+      name="msapplication-square310x310logo"
+      content="./images/icon@310.png"
+    />
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="./images/touch-icon-iphone.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images/touch-icon-ipad.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/touch-icon-iphone-retina.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/touch-icon-ipad-retina.png"
+    />
+    <!-- Microsoft -->
+    <meta
+      name="msapplication-square70x70logo"
+      content="./images/icon_smalltile.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="./images/icon_mediumtile.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="./images/icon_widetile.png"
+    />
 
-        <title> </title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./styles/styles.css"
+    />
+    <!--<link rel="stylesheet" type="text/css" media="speech" href="./styles/speech.css" />-->
+    <!--<link rel="stylesheet" type="text/css" media="print" href="./styles/print.css" />-->
+    <!--<link rel="stylesheet" type="text/css" media="screen and ( prefers-color-scheme : dark )" href="./styles/styles--dark.css" />-->
+    <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--sm.css" />-->
+    <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--ms.css>-->
+    <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--lg.css" />-->
+    <!--<link rel="stylesheet" type="text/css" media="screen and ( min-width: )" href="./styles/styles--xl.css" /><-->
 
-        <link rel="manifest" href="/manifest.json" />
+    <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet" />
 
-        <link rel="alternate" href="" hreflang="x-default">
+    <style>
+      @font-face {
+        font-family: "FiraSans", "Noto Sans", sans-serif;
+        src:
+          url("./src/fonts/FiraSans-Regular.otf") format("otf"),
+          url("src/fonts/FiraSans-Regular.woff") format("woff"),
+          url("./src/fonts/FiraSans-Regular.woff2") format("woff2"),
+          url("./src/fonts/FiraSans-Regular.ttf") format("truetype");
+        font-display: swap;
+        unicode-range: U+000- U+0FF;
+      }
 
-        <script type="module" src="/src/app.js" defer ></script>
+      body {
+        font-family: "FiraSans", "Noto Sans", sans-serif;
+      }
+    </style>
 
-        <noscript>
-            <style>
-                figure noscript { top : 0 ; left : 0 ; position : absolute }
-            </style>
-        </noscript>
+    <title> </title>
 
-    </head> <!-- Fin Head -->
-    <body class="Body" > <!-- Comienzo Body-->
-        <!--Comienzo NoScript-->
-        <figure>
-            <img 
-                width=""
-                height=""
-                class=""
-                src="./images/"
-                alt=""
-            />
-            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
-            <noscript>
-                <img
-                    widt=""
-                    height=""
-                    class=""
-                    src="./images/"
-                    alt=""
-                />
-            </noscript>
-        </figure>
-        <!--Fin NoScript-->
-        <!--Comienzo Header-->
-        <header class="Header" ></header>
-        <!--Fin Header-->
-        <!--Comienzo Aside-->
-        <aside class="Aside" ></aside>
-        <!--Fin Aside-->
-        <!--Comienzo main-->
-        <main class="Main" ></main>
-        <!--Fin Main-->
-        <!--Comienzo Footer-->
-        <footer class="Footer" ></footer>
-        <!--Fin Footer-->
+    <link rel="manifest" href="/manifest.json" />
 
-    </body> <!-- Fin Body -->
+    <link rel="alternate" href="" hreflang="x-default" />
+
+    <script type="module" src="/src/app.js" defer></script>
+
+    <noscript>
+      <style>
+        figure noscript {
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+      </style>
+    </noscript>
+  </head>
+  <!-- Fin Head -->
+  <body class="Body">
+    <!-- Comienzo Body-->
+    <!--Comienzo NoScript
+    <figure>
+      <img width="" height="" class="" src="./images/" alt="" />
+      <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+      <noscript>
+        <img widt="" height="" class="" src="./images/" alt="" />
+      </noscript>
+    </figure>
+    Fin NoScript-->
+    <!--Comienzo Header-->
+    <header class="Header">
+      <section>
+        <h1>El gato con botas</h1>
+        <h3>
+          La historia de un gato tan astuto que, con un par de botas y una
+          bolsa, es capaz de cambiar la vida de su dueño.
+        </h3>
+        <p class="paragraph">Charles Perrault</p>
+      </section>
+    </header>
+    <!--Fin Header-->
+    <!--Comienzo Aside-->
+    <aside class="Aside">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+    <!--Fin Aside-->
+    <!--Comienzo main-->
+    <main class="Main">
+      <section class="section">
+        <article class="article">
+          <p class="paragraph">
+            Había una vez un molinero que, antes de morir, llamó a sus tres
+            hijos y les dejó todos sus bienes: un molino, un asno y un gato. El
+            reparto de la herencia se hizo enseguida, sin llamar al notario ni
+            al procurador, pues probablemente se hubieran llevado todo el pobre
+            patrimonio. El hijo mayor se quedó con el molino; el segundo, con el
+            asno, y al más pequeño solo le correspondió el gato. El hijo menor
+            no podía consolarse de haber recibido tan poca cosa. –Mis hermanos
+            –decía– podrán ganarse la vida honradamente juntándose los dos. En
+            cambio yo, en cuanto me haya comido el gato y me haya hecho un
+            manguito con su piel, me moriré de hambre.
+          </p>
+          <p class="paragraph">
+            El gato, que entendía estas palabras pero ponía cara de que no, le
+            dijo con aire serio y sosegado: —No se aflija en absoluto, mi amo.
+            No tiene más que darme un saco y hacerme un par de botas para ir por
+            los matorrales y ya verá que su herencia no es tan poca cosa como
+            usted cree. Aunque el amo del gato no puso muchas esperanzas en él,
+            lo había visto valerse de tantas tretas para cazar ratas y ratones,
+            como cuando se colgaba por sus patas traseras o se escondía en la
+            harina haciéndose el muerto, que no perdió totalmente la ilusión de
+            que lo socorriera en su miseria. En cuanto el gato tuvo lo que había
+            solicitado, se calzó rápidamente las botas, se echó el saco al
+            hombro, tomó los cordones con sus patas delanteras y se dirigió a un
+            coto de caza en donde había muchos conejos. Puso salvado y hierbas
+            dentro del saco, se tendió en el suelo como si estuviese muerto, y
+            esperó que algún conejillo, poco conocedor de las trampas de este
+            mundo, viniera a meterse en el saco para comer lo que en él había
+            echado. Apenas se recostó, tuvo la primera satisfacción; un
+            distraído conejito entró en el saco. El gato tiró enseguida de los
+            cordones para atraparlo y lo mató sin compasión.
+          </p>
+          <p class="paragraph">
+            El gato, muy orgulloso de su presa, se dirigió hacia el palacio del
+            rey y pidió a los guardias que lo dejaran entrar para hablar con él.
+            Lo hicieron pasar a los aposentos de Su Majestad y, después de hacer
+            una gran reverencia al rey, le dijo: —Majestad, aquí tenéis un
+            conejo de campo que el señor Marqués de Carabás (que es el nombre
+            que se le ocurrió dar a su amo) me ha encargado ofreceros de su
+            parte. —Dile a tu amo –contestó el rey– que se lo agradezco, y que
+            me halaga en gran medida.
+          </p>
+          <p class="paragraph">
+            Tiempo más tarde, se escondió en un campo de trigo con el saco
+            abierto. En cuanto dos perdices entraron en él, tiró de los cordones
+            y las cazó. Enseguida fue a ofrecérselas al rey, tal como había
+            hecho con el conejo de campo. Una vez más, el rey se sintió halagado
+            al recibir las dos perdices. Ordenó a sus criados que dieran al gato
+            una propina y le sirvieran, además, lo que deseara comer y beber.
+            Durante dos o tres meses, el gato continuó llevando al rey las
+            piezas que cazaba. Siempre le decía que lo enviaba su amo, el
+            Marqués de Carabás. Un día el gato se enteró que el rey iba a dar un
+            paseo por la orilla del río con su hija, la princesa más hermosa del
+            mundo. Sin perder un segundo, le dijo a su amo: —Si sigue mi consejo
+            podrá hacer fortuna. No tiene más que bañarse en el río, en el lugar
+            que yo le indique, y luego déjeme hacer a mí. Pero recuerde que
+            ahora es usted el Marqués de Carabás; ya no es más el hijo de un
+            pobre molinero.
+          </p>
+          <p class="paragraph">
+            El Marqués de Carabás hizo lo que su gato le aconsejaba, sin saber
+            con qué fines lo hacía. Mientras el joven se bañaba, pasó por allí
+            el rey. Apenas lo vio, el gato se puso a gritar con todas sus
+            fuerzas. ¡SOCORRO! ¡SOCORRO! ¡Se ahoga el Marqués de Carabás!
+          </p>
+          <p class="paragraph">
+            Al oír los gritos, el rey se asomó por la ventanilla de su carruaje
+            y, reconociendo al gato que tantas piezas de caza le había llevado,
+            ordenó a sus guardias que fueran enseguida en auxilio del Marqués de
+            Carabás. Mientras sacaban del río al pobre Marqués, el gato se
+            acercó a la carroza y le dijo al rey que unos ladrones se habían
+            llevado la ropa de su amo a pesar de que él gritó con todas sus
+            fuerzas pidiendo ayuda. Pero la verdad era que el pícaro gato las
+            había escondido debajo de una enorme piedra. Al instante, el rey
+            ordenó a los encargados de su guardarropa que fueran a buscar uno de
+            sus más hermosos trajes y vistieran con él al señor Marqués de
+            Carabás. El rey quiso que subiera a la carroza y lo acompañara en su
+            paseo. A partir de ese momento le ofreció mil muestras de amistad al
+            hijo del molinero. El hermoso traje que acababan de darle realzaba
+            su figura, pues el muchacho era guapo y de buena presencia. Incluso
+            la hija del rey lo encontró muy de su agrado y, en cuanto el Marqués
+            de Carabás le dirigió dos o tres miradas muy respetuosas y un poco
+            tiernas, ella se enamoró locamente de él.
+          </p>
+          <p class="paragraph">
+            El gato, encantado a ver que su plan empezaba a dar resultado, se
+            adelantó y, encontrando a unos campesinos que segaban un campo, les
+            dijo: —¡Eh, oigan, buenas gentes, si no decís al rey que el campo
+            que estáis segando pertenece al señor Marqués de Carabás, seréis
+            hecho picadillo como carne de pastel!
+          </p>
+          <p class="paragraph">
+            Al pasar por allí, el rey no dejó de preguntar a los segadores de
+            quién era el campo que estaban segando. —Estos campos pertenecen al
+            señor Marqués de Carabás –respondieron todos a la vez, pues la
+            amenaza del gato los había asustado. —Tiene usted una hermosa
+            heredad –le dijo el rey al Marqués de Carabás. —Como usted ve, señor
+            –respondió el Marqués– es un prado que no deja de dar en abundancia
+            todos los años. Mientras tanto, el gato, que seguía yendo adelante,
+            se encontró con un grupo de cosechadores y les dijo: —¡Eh, oigan,
+            buenas gentes, si no decís al rey que todo este trigo pertenece al
+            señor Marqués de Carabás, seréis hecho picadillo como carne de
+            pastel! Un momento después, pasó el rey y quiso saber a quién
+            pertenecía todo el trigo que veía. —Todo el trigo pertenece al señor
+            Marqués de Carabás –respondieron todos a la vez, pues la amenaza del
+            gato los había asustado. Y el rey se sentía cada vez más complacido
+            con el Marqués. Finalmente, el Gato con Botas llegó a un grandioso
+            castillo. Su dueño era un temible ogro, el más rico de todo el
+            reino, ya que todas las tierras por donde el rey había pasado le
+            pertenecían. El gato, que sabía quién era aquel ogro y qué cosas
+            sabía hacer, llamó a la puerta y pidió hablar con él para
+            presentarle sus respetos. El ogro lo recibió tan cortésmente como
+            puede hacerlo un ogro y lo invitó a descansar un rato.
+          </p>
+          <p class="paragraph">
+            —Me han asegurado –comentó el gato mientras recuperaba el aliento–
+            que tenéis la habilidad de convertiros en cualquier clase de animal.
+            Que podéis, si os place, transformaros en león o en elefante. —Es
+            cierto –contestó el ogro bruscamente–. Y para demostrarlo, me veréis
+            convertido en un león. El gato se asustó mucho de encontrarse de
+            pronto delante de un león y, con gran esfuerzo y dificultad, pues
+            sus botas no servían para andar por las tejas, se trepó al alero del
+            tejado. Un rato después, en cuanto el gato comprobó que el ogro
+            había tomado otra vez su aspecto habitual, bajó del tejado y le
+            confesó que había pasado mucho miedo. —También me han asegurado
+            –dijo el gato– que sois capaz de convertiros en un animal pequeño,
+            como una rata o un ratón, aunque debo confesaros que esto sí me
+            parece del todo imposible. —¿Imposible? –replicó el ogro–. ¡Ya lo
+            veréis! Y mientras decía esto se transformó en un ratón que se puso
+            a correr por el suelo. El gato, en cuanto lo vio, se arrojó sobre él
+            y se lo comió.
+          </p>
+          <p class="paragraph">
+            Mientras tanto, el rey, al pasar ante el hermoso castillo, quiso
+            entrar en él. El gato, que había oído el repiqueteo de la carroza al
+            atravesar el puente levadizo, corrió a su encuentro y saludó al rey
+            con una gran reverencia. —Sea bienvenido Vuestra Majestad al
+            castillo del señor Marqués de Carabás. —¡Pero bueno, señor Marqués!
+            –exclamó el rey–. ¿Este castillo también es vuestro? ¡Qué belleza de
+            patio! Y los edificios que lo rodean son también magníficos.
+            ¿Pasamos al interior? El Marqués de Carabás tomó de la mano a la
+            princesa y, siguiendo al rey, entraron en un majestuoso salón, donde
+            los esperaban unos exquisitos manjares que el ogro tenía preparados
+            para obsequiar a unos amigos suyos que habían de visitarlo ese mismo
+            día. Pero los amigos del ogro no creyeron conveniente acercarse al
+            castillo cuando se enteraron que el rey estaba allí.
+          </p>
+          <p class="paragraph">
+            El rey, encantado de las buenas cualidades del señor Marqués de
+            Carabás, lo mismo que su hija, que estaba loca por él, y
+            contemplando los grandes bienes que poseía, le dijo, después de
+            beber cinco o seis copas. —Solo depende de usted, señor Marqués, que
+            sea mi yerno. El Marqués, haciendo grandes reverencias, aceptó el
+            honor que le hacía el rey y, ese mismo día, se casó con la princesa.
+            El gato se convirtió en un gran señor y ya no corrió detrás de los
+            ratones más que por diversión.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!--Fin Main-->
+    <!--Comienzo Footer-->
+    <footer class="Footer">
+      <section>
+        <article>
+          <div>
+            <p class="paragraph">
+              >
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <!--Fin Footer-->
+  </body>
+  <!-- Fin Body -->
 </html>

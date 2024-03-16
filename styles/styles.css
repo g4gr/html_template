@@ -3,22 +3,38 @@
 :root {
   --f_fontSize: 16px;
   --f_lineHeight: 1.5;
-  --f_fontWeight: 400;
+  --f_fontWeight: 500;
+  --f_fontFamilyPrimary: , sans-serif;
+  --f_fontFamilySecondary: "OpenDyslexic", sans-serif;
 }
 
 html {
   font-size: var(--f_fontSize);
   line-height: var(--f_lineHeight);
   font-weight: var(--f_fontWeight);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  border: 1px dashed red;
 }
 
 /* Body */
-.body {
-  font-size: clamp(100%, 1rem + 2vw m 25px);
+.Body {
+  font-family: var(--f_fontFamilyPrimary);
+  font-size: clamp(100%, 1rem + 1.5vw, 25px);
 }
 
 /* Header */
 .Header {
+}
+
+.Header section h1 {
+  font-weight: calc( var(--f_fontWeight) + 100 ); ;
 }
 
 /* Aside */
@@ -27,6 +43,17 @@ html {
 
 /* Main */
 .Main {
+  font-family: var(--f_fontFamilySecondary);
+}
+
+.Main .section {
+}
+
+.Main .section .article {
+}
+
+.Main .section .article .paragraph {
+  width: 45ch;
 }
 
 /* Footer */
